@@ -1,0 +1,3 @@
+H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
+H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/ALL_BUILD.dir
+H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/ZERO_CHECK.dir
