@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{41DFAE2B-D3C3-345A-8E81-9E5061EEBE17}</ProjectGuid>
+    <ProjectGuid>{8FF0CEC8-B635-3E2B-B840-4AC8726442B6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\CMakeLists.txt">
+    <CustomBuild Include="H:\angry-birds-clone-assignment-remiiwii\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii" "-BH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build" --check-stamp-file "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-remiiwii -BH:/angry-birds-clone-assignment-remiiwii/Build --check-stamp-file H:/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii" "-BH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build" --check-stamp-file "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-remiiwii -BH:/angry-birds-clone-assignment-remiiwii/Build --check-stamp-file H:/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii" "-BH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build" --check-stamp-file "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-remiiwii -BH:/angry-birds-clone-assignment-remiiwii/Build --check-stamp-file H:/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/angry-birds-clone-assignment-remiiwii/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii" "-BH:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build" --check-stamp-file "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-remiiwii -BH:/angry-birds-clone-assignment-remiiwii/Build --check-stamp-file H:/angry-birds-clone-assignment-remiiwii/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,94 +159,94 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\ZERO_CHECK.vcxproj">
-      <Project>{69ABB48F-8337-3B15-AE09-A619CB11DB52}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\ZERO_CHECK.vcxproj">
+      <Project>{3B992BA1-DCF3-3FC9-BFCC-E3FCE13D9303}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\Annoyed_Flocks.vcxproj">
-      <Project>{DAE912DC-EEF2-35B1-B4C8-84A02B2970B0}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\Annoyed_Flocks.vcxproj">
+      <Project>{D53ABB94-D713-3141-B830-A91C93D83E54}</Project>
       <Name>Annoyed_Flocks</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\RunUnitTests.vcxproj">
-      <Project>{C5CAE429-AED3-32E1-B356-752F75ED36F4}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\RunUnitTests.vcxproj">
+      <Project>{F9DBAB4C-2C25-39B2-B636-D254FFDC1654}</Project>
       <Name>RunUnitTests</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\src\box2d.vcxproj">
-      <Project>{96138314-ED35-3F18-98E0-15AB5F978DA5}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\src\box2d.vcxproj">
+      <Project>{3699295C-AED5-3379-816E-74E0B0723CB0}</Project>
       <Name>box2d</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\glad\glad.vcxproj">
-      <Project>{C490B6F4-0AA7-3FA4-BA33-198BAD10BE37}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\glad\glad.vcxproj">
+      <Project>{A152D2CB-509E-37A7-8238-CD14751ADDEC}</Project>
       <Name>glad</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\glfw\glfw.vcxproj">
-      <Project>{259B4258-CD6B-33F7-8C0F-91B9E10025AC}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\glfw\glfw.vcxproj">
+      <Project>{751C8C74-A64F-3336-8C1D-EC43A40153A0}</Project>
       <Name>glfw</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googlemock\gmock.vcxproj">
-      <Project>{2B5B3C85-B163-3339-8915-1B83E622D606}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googlemock\gmock.vcxproj">
+      <Project>{EA4E68FF-B0AA-3F59-A8C9-2568BBDA6EBC}</Project>
       <Name>gmock</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googlemock\gmock_main.vcxproj">
-      <Project>{3E1B1080-7581-361B-8D20-66F36162AC9D}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googlemock\gmock_main.vcxproj">
+      <Project>{9D862C2C-02CB-39AB-9DE9-85FC26768DE2}</Project>
       <Name>gmock_main</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googletest\gtest.vcxproj">
-      <Project>{4027A204-9571-3CC1-8758-1ACCDD8D786A}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{E29C32CB-40CB-3B32-B9CB-7644EB758C17}</Project>
       <Name>gtest</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googletest\gtest_main.vcxproj">
-      <Project>{7ECE3E46-51A4-3B99-A980-1BB83E77065F}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{7AA4EC66-88A8-3C05-B7C5-FAA2AAB176CF}</Project>
       <Name>gtest_main</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\imgui\imgui.vcxproj">
-      <Project>{F2294081-BEDA-3AC1-A608-52950E16880C}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\imgui\imgui.vcxproj">
+      <Project>{856231FC-B80D-33CB-9BF4-08FAAF19087D}</Project>
       <Name>imgui</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\sajson.vcxproj">
-      <Project>{C913CB62-E0AB-3FF1-9342-0F2F79EFA9E9}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\sajson.vcxproj">
+      <Project>{8972463D-735B-3FBD-97BC-4297D68B3B2A}</Project>
       <Name>sajson</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Audio\sfml-audio.vcxproj">
-      <Project>{35BEF3D9-D906-36DE-B4F5-86ADFB0B2D3C}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{577741D0-72A8-30AE-B7A3-366DAF439B22}</Project>
       <Name>sfml-audio</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.vcxproj">
-      <Project>{E0A7EEEF-D548-3F4E-ABEB-F17A252CE9B6}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{8F9E9EC6-97D6-300C-9176-51D19E83CB1D}</Project>
       <Name>sfml-graphics</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Main\sfml-main.vcxproj">
-      <Project>{0B3E6AC6-159F-3B7F-8081-50C18AFC2C3A}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Main\sfml-main.vcxproj">
+      <Project>{77BD0294-9157-38A3-BA2C-45A90A7E8B0F}</Project>
       <Name>sfml-main</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Network\sfml-network.vcxproj">
-      <Project>{30CA9860-244A-37B6-9D25-4010B7B1A9C4}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{96BC9F8A-9987-363D-BB5C-036AB4FF57DF}</Project>
       <Name>sfml-network</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
-      <Project>{9BA24F59-268B-3155-8240-169E4B76128F}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
+      <Project>{0D8E505E-6A39-3DA3-B975-FEBB23BCDE92}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{19974EA4-D245-3E91-A9E5-EB95531435A3}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{C7B968C0-0A28-3885-BCE6-A4DC93E6A9FF}</Project>
       <Name>sfml-window</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\testbed\testbed.vcxproj">
-      <Project>{B919C753-8C3D-38D9-8CF5-B5AF89FA1DA3}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\testbed\testbed.vcxproj">
+      <Project>{DFE5FABE-6AD8-36E8-AC42-3CEB4A8A9110}</Project>
       <Name>testbed</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\unit-test\unit_test.vcxproj">
-      <Project>{77F521CB-ACEA-3F72-A07E-2DB38382325B}</Project>
+    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\unit-test\unit_test.vcxproj">
+      <Project>{1D96342C-C6C7-3D07-A1FE-B0955968D125}</Project>
       <Name>unit_test</Name>
     </ProjectReference>
   </ItemGroup>

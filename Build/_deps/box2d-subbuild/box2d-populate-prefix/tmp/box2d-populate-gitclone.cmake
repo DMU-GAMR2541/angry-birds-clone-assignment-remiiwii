@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-if(EXISTS "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt" AND EXISTS "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitinfo.txt" AND
-  "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt" IS_NEWER_THAN "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitinfo.txt")
+if(EXISTS "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt" AND EXISTS "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitinfo.txt" AND
+  "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt" IS_NEWER_THAN "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt'"
+    "'H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,12 +22,12 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: 'H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src'")
+  message(FATAL_ERROR "Failed to remove directory: 'H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -37,7 +37,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "C:/Program Files/Git/cmd/git.exe"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/erincatto/box2d.git" "box2d-src"
-    WORKING_DIRECTORY "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps"
+    WORKING_DIRECTORY "H:/angry-birds-clone-assignment-remiiwii/Build/_deps"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -53,7 +53,7 @@ endif()
 execute_process(
   COMMAND "C:/Program Files/Git/cmd/git.exe"
           checkout "v2.4.1" --
-  WORKING_DIRECTORY "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
+  WORKING_DIRECTORY "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
@@ -66,22 +66,22 @@ if(init_submodules)
   execute_process(
     COMMAND "C:/Program Files/Git/cmd/git.exe" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
+    WORKING_DIRECTORY "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: 'H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src'")
+  message(FATAL_ERROR "Failed to update submodules in: 'H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitinfo.txt" "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitinfo.txt" "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/box2d-populate-prefix/src/box2d-populate-stamp/box2d-populate-gitclone-lastrun.txt'")
 endif()

@@ -1,4 +1,4 @@
-# Install script for directory: H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src/extern/glfw
+# Install script for directory: H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src/extern/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

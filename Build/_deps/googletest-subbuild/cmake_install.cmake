@@ -1,4 +1,4 @@
-# Install script for directory: H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-subbuild
+# Install script for directory: H:/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,6 +47,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-subbuild/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

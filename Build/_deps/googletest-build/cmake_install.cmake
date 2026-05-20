@@ -1,4 +1,4 @@
-# Install script for directory: H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-src
+# Install script for directory: H:/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-build/googlemock/cmake_install.cmake")
+  include("H:/angry-birds-clone-assignment-remiiwii/Build/_deps/googletest-build/googlemock/cmake_install.cmake")
 
 endif()
 

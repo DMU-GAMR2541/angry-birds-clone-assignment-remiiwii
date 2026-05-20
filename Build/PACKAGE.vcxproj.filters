@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="H:\GAMR2541 Production Level C++\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\87494da9d0ea2769b2520e8539e4a3da\PACKAGE_force.rule">
+    <CustomBuild Include="H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\a08dbc8fd4f601eafb3e316bfc0b96f6\PACKAGE_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{C5B451AD-9233-3FD4-8804-68E2A0543A86}</UniqueIdentifier>
+      <UniqueIdentifier>{67D9C6A3-D482-3C16-A647-1470F6D96880}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(box2d-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/erincatto/box2d.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v2.4.1"
-                    SOURCE_DIR          "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
-                    BINARY_DIR          "H:/GAMR2541 Production Level C++/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-build"
+                    SOURCE_DIR          "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-src"
+                    BINARY_DIR          "H:/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
