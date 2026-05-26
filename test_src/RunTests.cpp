@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "Enemy.h"
 #include "Slingshot.h"
+#include "Pig.h"
 
 /// <summary>
 ///Taken from the GoogleTest primer. 
@@ -50,6 +51,22 @@ protected:
         slingshot = std::make_unique<Slingshot>();
     }
 };
+
+class PigTest : public testing::Test, public Pig {
+public:
+    std::unique_ptr<Pig> pig;
+protected:
+    void SetUp() override {
+        Pig testpig("../assets/pig.png", 100.0f, 100.0f);
+    }
+};
+
+TEST_F(PigTest, SpriteRenderTest) {
+    EXPECT_TRUE(checkSpriteRendered());
+    SUCCEED() << "Sprite Render test passed! :)";
+    FAIL() << "Sprite Render test failed :(";
+}
+
 
 
 //A single test, not a fixture. No setup is called.

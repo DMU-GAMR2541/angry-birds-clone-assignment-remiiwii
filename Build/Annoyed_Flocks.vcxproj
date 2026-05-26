@@ -333,7 +333,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="H:\angry-birds-clone-assignment-remiiwii\src\main.cpp" />
+    <ClInclude Include="..\include\Bird.h" />
+    <ClInclude Include="..\include\Block.h" />
+    <ClInclude Include="..\include\DynamicObject.h" />
     <ClInclude Include="..\include\GameObject.h" />
+    <ClInclude Include="..\include\Pig.h" />
+    <ClInclude Include="..\include\StaticObject.h" />
+    <ClInclude Include="..\include\UI.h" />
     <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Enemy.h" />
     <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Slingshot.h" />
   </ItemGroup>

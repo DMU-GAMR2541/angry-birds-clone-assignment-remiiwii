@@ -1,11 +1,17 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
+#include "Pig.h"
 
 int main() {
+    
     // --- 1. WINDOW SETUP ---
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
+
+    Pig pig1("../assets/pig.png", 250.0f, 200.0f);
+    Pig pig2("../assets/pig.png", 400.0f, 200.0f);
+    Pig pig3("../assets/pig.png", 550.0f, 200.0f);
 
     //Box2D works in meters. SFML works in pixels.
     const float SCALE = 30.0f;
@@ -133,6 +139,10 @@ int main() {
         window.draw(sf_wallVisual);
         window.draw(sf_plankVisual);
         window.draw(sf_ballVisual);
+
+        pig1.draw(window);
+        pig2.draw(window);
+        pig3.draw(window);
 
         window.display();
     }
