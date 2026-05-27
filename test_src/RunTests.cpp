@@ -73,20 +73,26 @@ TEST_F(PigTest, pigPositionTests) {
 
 class BirdTest : public testing::Test {
 public:
-    std::unique_ptr<Bird> testbird;
-    std::unique_ptr<Pig> testpig;
+    std::unique_ptr<Bird> bird;
+    std::unique_ptr<Pig> pig1;
+    std::unique_ptr<Pig> pig2;
+    std::unique_ptr<Pig> pig3;
 protected:
     void SetUp() override {
-        testbird = std::make_unique<Bird>("../assets/bird.png", 300.0f, 200.0f);
-        testpig = std::make_unique<Pig>("../assets/pig.png", 100.0f, 100.0f);
+        bird = std::make_unique<Bird>("../assets/bird.png", 50.0f, 50.0f);
+        pig1 = std::make_unique<Pig>("../assets/pig.png", 250.0f, 200.0f);
+        pig2 = std::make_unique<Pig>("../assets/pig.png", 300.0f, 200.0f);
+        pig3 = std::make_unique<Pig>("../assets/pig.png", 350.0f, 200.0f);
     }
 };
 TEST_F(BirdTest, birdPositionTests) {
-    EXPECT_EQ(testbird->getXPosition(), 300.0f);
-    EXPECT_EQ(testbird->getYPosition(), 200.0f);
+    EXPECT_EQ(bird->getXPosition(), 50.0f);
+    EXPECT_EQ(bird->getYPosition(), 50.0f);
 }
 TEST_F(BirdTest, comparisonTests) {
-    EXPECT_GT(testbird->getYPosition(), testpig->getYPosition());
+    ASSERT_LE(bird->getXPosition(), bird->getYPosition(), pig1->getXPosition(), pig1->getYPosition());
+    ASSERT_LE(bird->getXPosition(), bird->getYPosition(), pig2->getXPosition(), pig2->getYPosition());
+    ASSERT_LE(bird->getXPosition(), bird->getYPosition(), pig3->getXPosition(), pig3->getYPosition());
 }
 
 

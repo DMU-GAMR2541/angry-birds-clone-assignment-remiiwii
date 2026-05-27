@@ -7,7 +7,7 @@ private:
 	sf::Sprite sp_rendered;
 	sf::Texture sf_tex;
 
-	float i = 0, bx = 0, by = 0, movement = 0;
+	float i = 0, mx = 0, my = 0, movement = 0;
 	bool b_spriteRendered = true;
 
 public:
@@ -22,7 +22,7 @@ public:
 		sp_rendered.setPosition(x, y);
 		sp_rendered.setScale(0.2f, 0.2f);
 
-		bx = x, by = y;
+		mx = x, my = y;
 		
 	}
 
@@ -31,10 +31,10 @@ public:
 	}
 
 	float getXPosition() const {
-		return bx;
+		return mx;
 	}
 	float getYPosition() const {
-		return by;
+		return my;
 	}
 
 	bool checkSpriteRendered() const {
