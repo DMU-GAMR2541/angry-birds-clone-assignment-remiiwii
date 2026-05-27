@@ -27,6 +27,16 @@ public:
 	void draw(sf::RenderWindow& window) {
 		window.draw(sp_rendered);
 	}
+	void moveSpriteBy(float moveX, float moveY) {
+		sp_rendered.move(moveX, moveY);
+	}
+
+	sf::Sprite getSprite() const {
+		return sp_rendered;
+	}
+	sf::Vector2f getSpriteCoordinates() const {
+		return sp_rendered.getPosition();
+	}
 
 	float getXPosition() const {
 		return mx;

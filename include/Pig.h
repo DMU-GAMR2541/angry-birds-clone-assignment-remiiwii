@@ -30,13 +30,20 @@ public:
 		window.draw(sp_rendered);
 	}
 
+	sf::Sprite getSprite() const {
+		return sp_rendered;
+	}
+	sf::Vector2f getSpriteCoordinates() const {
+		return sp_rendered.getPosition();
+	}
+	bool checkSpriteRendered() const {
+		return b_spriteRendered;
+	}
+
 	float getXPosition() const {
 		return mx;
 	}
 	float getYPosition() const {
 		return my;
 	}
-
-	bool checkSpriteRendered() const {
-		return b_spriteRendered;	}		
 };

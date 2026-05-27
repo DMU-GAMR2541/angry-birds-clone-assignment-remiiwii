@@ -66,8 +66,8 @@ TEST_F(PigTest, SpriteRenderTest) {
     ASSERT_TRUE(testpig->checkSpriteRendered());
 }
 TEST_F(PigTest, pigPositionTests) {
-    EXPECT_EQ(testpig->getXPosition(), 100.0f);
-    EXPECT_EQ(testpig->getYPosition(), 100.0f);
+    ASSERT_EQ(testpig->getXPosition(), 100.0f);
+    ASSERT_EQ(testpig->getYPosition(), 100.0f);
 }
 
 
@@ -89,12 +89,15 @@ TEST_F(BirdTest, birdPositionTests) {
     EXPECT_EQ(bird->getXPosition(), 50.0f);
     EXPECT_EQ(bird->getYPosition(), 50.0f);
 }
-TEST_F(BirdTest, comparisonTests) {
-    ASSERT_LE(bird->getXPosition(), bird->getYPosition(), pig1->getXPosition(), pig1->getYPosition());
-    ASSERT_LE(bird->getXPosition(), bird->getYPosition(), pig2->getXPosition(), pig2->getYPosition());
-    ASSERT_LE(bird->getXPosition(), bird->getYPosition(), pig3->getXPosition(), pig3->getYPosition());
+TEST_F(BirdTest, PositionRelationTests) {
+    ASSERT_LE(bird->getSpriteCoordinates(), pig1->getSpriteCoordinates());
+    ASSERT_LE(bird->getSpriteCoordinates(), pig2->getSpriteCoordinates());
+    ASSERT_LE(bird->getSpriteCoordinates(), pig3->getSpriteCoordinates());
 }
-
+TEST_F(BirdTest, birdMovementTest) {
+    bird->moveSpriteBy(100, 100);
+    EXPECT_EQ(bird->getSpriteCoordinates(), (150.0f, 150.0f));
+}
 
 //A single test, not a fixture. No setup is called.
 TEST(Enemy, First_test) {
