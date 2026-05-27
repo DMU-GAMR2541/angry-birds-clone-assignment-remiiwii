@@ -2,6 +2,7 @@
 #include "Enemy.h"
 #include "Slingshot.h"
 #include "Pig.h"
+#include "Bird.h"
 
 /// <summary>
 ///Taken from the GoogleTest primer. 
@@ -52,29 +53,45 @@ protected:
     }
 };
 
-class PigTest : public testing::Test, public Pig {
+
+class PigTest : public testing::Test {
 public:
-    std::unique_ptr<Pig> pig;
+    std::unique_ptr<Pig> testpig;
 protected:
     void SetUp() override {
-        Pig testpig("../assets/pig.png", 100.0f, 100.0f);
+        testpig = std::make_unique<Pig> ("../assets/pig.png", 100.0f, 100.0f);
     }
 };
-
 TEST_F(PigTest, SpriteRenderTest) {
-    EXPECT_TRUE(checkSpriteRendered());
-    SUCCEED() << "Sprite Render test passed! :)";
-    FAIL() << "Sprite Render test failed :(";
+    ASSERT_TRUE(testpig->checkSpriteRendered());
+}
+TEST_F(PigTest, pigPositionTests) {
+    EXPECT_EQ(testpig->getXPosition(), 100.0f);
+    EXPECT_EQ(testpig->getYPositionNot(), 100.0f);
 }
 
+
+class BirdTest : public testing::Test {
+public:
+    std::unique_ptr<Bird> testbird;
+protected:
+    void SetUp() override {
+        testbird = std::make_unique<Bird>("../assets/bird.png", 300.0f, 200.0f);
+    }
+};
+TEST_F(BirdTest, birdPositionTests) {
+    EXPECT_EQ(testbird->getXPosition(), 300.0f);
+    EXPECT_EQ(testbird->getYPosition(), 200.0f);
+}
+TEST_F(BirdTest, PigTest, comparisonTests) {
+    EXPECT_GT(testbird->getYPosition(), testpig->getYPositionNot());
+}
 
 
 //A single test, not a fixture. No setup is called.
 TEST(Enemy, First_test) {
     Enemy e(100);
     EXPECT_GT(e.getHealth(), 100);
-    SUCCEED() << "Test test passed";
-    FAIL() << "Test didn't pass";
 }
 
 TEST_F(EnemyTest, LethalDamagePopsPig) {
