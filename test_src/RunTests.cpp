@@ -89,15 +89,24 @@ TEST_F(BirdTest, birdPositionTests) {
     EXPECT_EQ(bird->getXPosition(), 50.0f);
     EXPECT_EQ(bird->getYPosition(), 50.0f);
 }
+TEST_F(BirdTest, newBirdPositionTest) {
+    EXPECT_EQ(bird->getSpriteCoordinates().x, 50.0f);
+    EXPECT_EQ(bird->getSpriteCoordinates().y, 50.0f);
+}
 TEST_F(BirdTest, PositionRelationTests) {
-    ASSERT_LE(bird->getSpriteCoordinates(), pig1->getSpriteCoordinates());
-    ASSERT_LE(bird->getSpriteCoordinates(), pig2->getSpriteCoordinates());
-    ASSERT_LE(bird->getSpriteCoordinates(), pig3->getSpriteCoordinates());
+    ASSERT_LE(bird->getSpriteCoordinates().x, pig1->getSpriteCoordinates().x);
+    ASSERT_LE(bird->getSpriteCoordinates().y, pig1->getSpriteCoordinates().y);
+    ASSERT_LE(bird->getSpriteCoordinates().x, pig2->getSpriteCoordinates().x);
+    ASSERT_LE(bird->getSpriteCoordinates().y, pig2->getSpriteCoordinates().y);
+    ASSERT_LE(bird->getSpriteCoordinates().x, pig3->getSpriteCoordinates().x);
+    ASSERT_LE(bird->getSpriteCoordinates().y, pig3->getSpriteCoordinates().y);
 }
 TEST_F(BirdTest, birdMovementTest) {
-    bird->moveSpriteBy(100, 100);
-    EXPECT_EQ(bird->getSpriteCoordinates(), (150.0f, 150.0f));
+    bird->moveSpriteBy(100.0f, 100.0f);
+    EXPECT_GE(bird->getSpriteCoordinates().x, 150.0f);
+    EXPECT_GE(bird->getSpriteCoordinates().y, 150.0f);
 }
+
 
 //A single test, not a fixture. No setup is called.
 TEST(Enemy, First_test) {

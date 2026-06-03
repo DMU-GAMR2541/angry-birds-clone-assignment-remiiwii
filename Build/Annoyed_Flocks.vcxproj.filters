@@ -6,31 +6,31 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Bird.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\DynamicObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Pig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\Slingshot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\GameObject.h">
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\StaticObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\DynamicObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\StaticObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Bird.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Pig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Block.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\UI.h">
+    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\include\UI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
