@@ -1,3 +1,0 @@
-C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/box2d-populate.dir
-C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/ZERO_CHECK.dir
