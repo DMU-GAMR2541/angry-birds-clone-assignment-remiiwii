@@ -7,9 +7,7 @@ private:
 	sf::Sprite sp_rendered;
 	sf::Texture sf_tex;
 
-	float i = 0, mx = 0, my = 0, movement = 0;
 	bool b_spriteRendered = true;
-
 public:
 	Pig(const std::string& textureFile, float x, float y) {
 
@@ -21,9 +19,6 @@ public:
 		sp_rendered.setTexture(sf_tex);
 		sp_rendered.setPosition(x, y);
 		sp_rendered.setScale(0.2f, 0.2f);
-
-		mx = x, my = y;
-		
 	}
 
 	void draw(sf::RenderWindow& window) {
@@ -36,14 +31,8 @@ public:
 	sf::Vector2f getSpriteCoordinates() const {
 		return sp_rendered.getPosition();
 	}
+
 	bool checkSpriteRendered() const {
 		return b_spriteRendered;
-	}
-
-	float getXPosition() const {
-		return mx;
-	}
-	float getYPosition() const {
-		return my;
 	}
 };

@@ -61,15 +61,15 @@ public:
     std::unique_ptr<Pig> testpig;
 protected:
     void SetUp() override {
-        testpig = std::make_unique<Pig> ("../assets/pig.png", 100.0f, 100.0f);
+        testpig = std::make_unique<Pig> ("../assets/pig.png", 250.0f, 200.0f);
     }
 };
 TEST_F(PigTest, SpriteRenderTest) {
     ASSERT_TRUE(testpig->checkSpriteRendered());
 }
 TEST_F(PigTest, pigPositionTests) {
-    ASSERT_EQ(testpig->getXPosition(), 100.0f);
-    ASSERT_EQ(testpig->getYPosition(), 100.0f);
+    EXPECT_LE(testpig->getSpriteCoordinates().x, 100.0f);
+    EXPECT_LE(testpig->getSpriteCoordinates().y, 100.0f);
 }
 
 
@@ -87,15 +87,12 @@ protected:
         pig3 = std::make_unique<Pig>("../assets/pig.png", 350.0f, 200.0f);
     }
 };
-TEST_F(BirdTest, birdPositionTests) {
-    EXPECT_EQ(bird->getXPosition(), 50.0f);
-    EXPECT_EQ(bird->getYPosition(), 50.0f);
-}
-TEST_F(BirdTest, newBirdPositionTest) {
+
+TEST_F(BirdTest, birdPositionTest) {
     EXPECT_EQ(bird->getSpriteCoordinates().x, 50.0f);
     EXPECT_EQ(bird->getSpriteCoordinates().y, 50.0f);
 }
-TEST_F(BirdTest, PositionRelationTests) {
+TEST_F(BirdTest, positionRelationTests) {
     ASSERT_LE(bird->getSpriteCoordinates().x, pig1->getSpriteCoordinates().x);
     ASSERT_LE(bird->getSpriteCoordinates().y, pig1->getSpriteCoordinates().y);
 
@@ -117,7 +114,7 @@ TEST(Bird, DestructorOrder) {
     destructorLog.clear();
 
     {
-        Bird bird("../assets/bird.png", 50.0f, 50.0f);
+        Bird bird("../assets/bird.png", 0.0f, 0.0f);
     }
 
     EXPECT_EQ(destructorLog[0], "Bird");
