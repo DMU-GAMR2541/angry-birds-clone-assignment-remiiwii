@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\src\gl.c">
+    <ClCompile Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\src\gl.c">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\include\glad\gl.h">
+    <ClInclude Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\include\glad\gl.h">
       <Filter>include\glad</Filter>
     </ClInclude>
-    <ClInclude Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\include\KHR\khrplatform.h">
+    <ClInclude Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\include\KHR\khrplatform.h">
       <Filter>include\KHR</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-src\extern\glad\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{B2C67D2E-6F69-33E3-9C6D-826DD2E9BB82}</UniqueIdentifier>
+      <UniqueIdentifier>{9E743901-DF00-34CF-B7AD-A4D097ECED22}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\KHR">
-      <UniqueIdentifier>{273B34C7-1BF6-33B1-B716-A8E889BA2B20}</UniqueIdentifier>
+      <UniqueIdentifier>{E09E26D4-A321-3BA7-88FE-18D5C4779F7B}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\glad">
-      <UniqueIdentifier>{A992F13C-D5F0-342B-B3AB-9A51F2261C5D}</UniqueIdentifier>
+      <UniqueIdentifier>{47A8B12A-4FE3-34C8-A71A-4C61BF39AC53}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{B54524B9-F403-324A-BE0C-8588256B2EEF}</UniqueIdentifier>
+      <UniqueIdentifier>{1F68A01C-6E37-3827-945E-507906231620}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -3,6 +3,8 @@
 #include "Slingshot.h"
 #include "Pig.h"
 #include "Bird.h"
+#include "DynamicObject.h"
+#include "GameObject.h"
 
 /// <summary>
 ///Taken from the GoogleTest primer. 
@@ -96,8 +98,10 @@ TEST_F(BirdTest, newBirdPositionTest) {
 TEST_F(BirdTest, PositionRelationTests) {
     ASSERT_LE(bird->getSpriteCoordinates().x, pig1->getSpriteCoordinates().x);
     ASSERT_LE(bird->getSpriteCoordinates().y, pig1->getSpriteCoordinates().y);
+
     ASSERT_LE(bird->getSpriteCoordinates().x, pig2->getSpriteCoordinates().x);
     ASSERT_LE(bird->getSpriteCoordinates().y, pig2->getSpriteCoordinates().y);
+
     ASSERT_LE(bird->getSpriteCoordinates().x, pig3->getSpriteCoordinates().x);
     ASSERT_LE(bird->getSpriteCoordinates().y, pig3->getSpriteCoordinates().y);
 }
@@ -107,6 +111,19 @@ TEST_F(BirdTest, birdMovementTest) {
     EXPECT_GE(bird->getSpriteCoordinates().y, 150.0f);
 }
 
+std::vector<std::string> destructorLog;
+
+TEST(Bird, DestructorOrder) {
+    destructorLog.clear();
+
+    {
+        Bird bird("../assets/bird.png", 50.0f, 50.0f);
+    }
+
+    EXPECT_EQ(destructorLog[0], "Bird");
+    EXPECT_EQ(destructorLog[1], "DynamicObject");
+    EXPECT_EQ(destructorLog[2], "GameObject");
+}
 
 //A single test, not a fixture. No setup is called.
 TEST(Enemy, First_test) {

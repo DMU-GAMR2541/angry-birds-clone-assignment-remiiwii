@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\a08dbc8fd4f601eafb3e316bfc0b96f6\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\4c309e16130c2f86a6a8d3068b37e156\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{67D9C6A3-D482-3C16-A647-1470F6D96880}</UniqueIdentifier>
+      <UniqueIdentifier>{30149CF4-4282-329F-B107-2FF2A25DAD2B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

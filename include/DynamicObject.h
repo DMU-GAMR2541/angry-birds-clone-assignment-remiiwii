@@ -6,10 +6,8 @@ class DynamicObject : public virtual GameObject {
 private:
 
 public:
-	DynamicObject() {
-
-	}
-	~DynamicObject() {
-
-	}
+    ~DynamicObject()
+    {
+        destructorLog.push_back("DynamicObject");
+    }
 };

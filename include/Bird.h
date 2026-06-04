@@ -23,6 +23,10 @@ public:
 		mx = x, my = y;
 
 	}
+	~Bird()
+	{
+		destructorLog.push_back("Bird");
+	}
 
 	void draw(sf::RenderWindow& window) {
 		window.draw(sp_rendered);

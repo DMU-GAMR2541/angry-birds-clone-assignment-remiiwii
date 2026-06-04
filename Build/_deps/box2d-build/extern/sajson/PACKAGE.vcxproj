@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BDDAE19E-2AE5-36D8-A52F-C2367659E64B}</ProjectGuid>
+    <ProjectGuid>{17760033-A05F-3244-A44B-051DF26DDED4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -71,9 +71,9 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd H:\angry-birds-clone-assignment-remiiwii\Build
+cd C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build
 if %errorlevel% neq 0 goto :cmEnd
-H:
+C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -89,9 +89,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd H:\angry-birds-clone-assignment-remiiwii\Build
+cd C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build
 if %errorlevel% neq 0 goto :cmEnd
-H:
+C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -107,9 +107,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd H:\angry-birds-clone-assignment-remiiwii\Build
+cd C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build
 if %errorlevel% neq 0 goto :cmEnd
-H:
+C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -125,9 +125,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd H:\angry-birds-clone-assignment-remiiwii\Build
+cd C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build
 if %errorlevel% neq 0 goto :cmEnd
-H:
+C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
@@ -140,7 +140,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="H:\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\e37a20c8c403f55de217ed6ef3ce5860\PACKAGE_force.rule">
+    <CustomBuild Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\CMakeFiles\aad6d9f3a6dc743fd42331681617b2b5\PACKAGE_force.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -153,7 +153,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
@@ -168,7 +168,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
@@ -183,7 +183,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
@@ -198,20 +198,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\box2d-build\extern\sajson\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\ZERO_CHECK.vcxproj">
-      <Project>{3B992BA1-DCF3-3FC9-BFCC-E3FCE13D9303}</Project>
+    <ProjectReference Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\ZERO_CHECK.vcxproj">
+      <Project>{4AE065E5-567C-30D3-8645-58EBDB52EEAF}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googletest\ALL_BUILD.vcxproj">
-      <Project>{8FF0CEC8-B635-3E2B-B840-4AC8726442B6}</Project>
+    <ProjectReference Include="C:\Users\dylan\Documents\GitHub\angry-birds-clone-assignment-remiiwii\Build\_deps\googletest-build\googletest\ALL_BUILD.vcxproj">
+      <Project>{37EF5BB3-8754-3475-A23D-258FCE4B5AA1}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
