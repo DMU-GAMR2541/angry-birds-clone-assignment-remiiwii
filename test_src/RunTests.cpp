@@ -121,9 +121,9 @@ TEST(Bird, destructorSequence) {
         Bird bird("../assets/bird.png", 50.0f, 50.0f);  // Creates a bird object purely to trigger its destructor.
     }
 
-    EXPECT_EQ(destructorLog[0], "Bird");
-    EXPECT_EQ(destructorLog[1], "DynamicObject");
-    EXPECT_EQ(destructorLog[2], "GameObject");  // Destructors trigger from the bottom of the inheritence "ladder," starting with Bird, moving to DynamicObject, and finally GameObject.
+    ASSERT_EQ(destructorLog[0], "Bird");
+    ASSERT_EQ(destructorLog[1], "DynamicObject");
+    ASSERT_EQ(destructorLog[2], "GameObject");  // Destructors trigger from the bottom of the inheritence "ladder," starting with Bird, moving to DynamicObject, and finally GameObject.
 }
 
 
