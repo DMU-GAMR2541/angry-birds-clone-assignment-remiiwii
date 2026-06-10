@@ -1,0 +1,14 @@
+# Target labels
+ sfml-populate
+# Source files and their labels
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/sfml-populate
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/d6d09c7353a94867b60db8cfc827a9d9/sfml-populate.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/22bb76227e4533806761adf461232742/sfml-populate-complete.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-build.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-configure.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-download.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-install.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-mkdir.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-patch.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-test.rule
+C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/sfml-subbuild/CMakeFiles/8474f5a3b933bb405fb148a0926261fc/sfml-populate-update.rule

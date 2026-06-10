@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/box2d-populate"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/1719f5914d04fd536da2aa47ab1dc319/box2d-populate.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/4f67a4d1324f3f84766244f66ecea690/box2d-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/dylan/Documents/GitHub/angry-birds-clone-assignment-remiiwii/Build/_deps/box2d-subbuild/CMakeFiles/019d8929dc5d4b5584c612e5a0a72822/box2d-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"box2d-populate"
+		],
+		"name" : "box2d-populate"
+	}
+}

@@ -2,6 +2,9 @@
 #include <box2d/box2d.h>
 #include <iostream>
 #include "Pig.h"
+#include "PigMemoryPool.h"
+
+std::vector<std::string> destructorLog;     // From destructor sequence tests. Game wouldn't run unless this was written
 
 int main() {
     
@@ -9,9 +12,11 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
 
-    Pig pig1("../assets/pig.png", 250.0f, 200.0f);
-    Pig pig2("../assets/pig.png", 400.0f, 200.0f);
-    Pig pig3("../assets/pig.png", 550.0f, 200.0f);
+    PigMemoryPool pigMemoryPool(3);
+
+    Pig* pig1 = pigMemoryPool.acquire(250.0f, 200.0f);
+    Pig* pig2 = pigMemoryPool.acquire(400.0f, 200.0f);
+    Pig* pig3 = pigMemoryPool.acquire(550.0f, 200.0f);
 
     //Box2D works in meters. SFML works in pixels.
     const float SCALE = 30.0f;
@@ -140,9 +145,11 @@ int main() {
         window.draw(sf_plankVisual);
         window.draw(sf_ballVisual);
 
-        pig1.draw(window);
-        pig2.draw(window);
-        pig3.draw(window);
+        for (const auto& entry : pigMemoryPool.getPool()) {
+            if (entry.b_active) {
+                entry.pig->draw(window);
+            }
+        }
 
         window.display();
     }

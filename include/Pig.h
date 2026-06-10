@@ -3,7 +3,7 @@
 #include "DynamicObject.h"
 
 class Pig : public virtual DynamicObject {
-private:
+protected:
 
 public:
 	Pig(const std::string& textureFile, float x, float y) {		// Constructor.
