@@ -1,6 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
+#include <thread>
+#include <mutex>
+#include <chrono>
 #include "Pig.h"
 #include "PigMemoryPool.h"
 
@@ -17,6 +20,30 @@ int main() {
     Pig* pig1 = pigMemoryPool.acquire(250.0f, 200.0f);
     Pig* pig2 = pigMemoryPool.acquire(400.0f, 200.0f);
     Pig* pig3 = pigMemoryPool.acquire(550.0f, 200.0f);
+
+    std::mutex loadingMutex;
+    std::thread loadingThread([&loadingMutex]()
+        {
+            {
+                std::lock_guard<std::mutex> lock(loadingMutex);
+                std::cout << "Loading game assets..." << std::endl;
+            }
+            for (int i = 1; i <= 5; i++)
+            {
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+                std::lock_guard<std::mutex> lock(loadingMutex);
+                std::cout << "Loading Game: " << (i * 20) << "% complete..." << std::endl;
+            }
+            {
+                std::lock_guard<std::mutex> lock(loadingMutex);
+                std::cout << "Loading complete." << std::endl;
+            }
+        });
+
+    if (loadingThread.joinable())
+    {
+        loadingThread.join();
+    }
 
     //Box2D works in meters. SFML works in pixels.
     const float SCALE = 30.0f;
