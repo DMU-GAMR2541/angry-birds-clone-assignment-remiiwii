@@ -15,35 +15,69 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
 
-    PigMemoryPool pigMemoryPool(3);
+    PigMemoryPool pigMemoryPool(10);    // Creation of the pig memory pool.
 
+    // Sets up each pig object by using the memory "claimed" by the pool.
     Pig* pig1 = pigMemoryPool.acquire(250.0f, 200.0f);
     Pig* pig2 = pigMemoryPool.acquire(400.0f, 200.0f);
     Pig* pig3 = pigMemoryPool.acquire(550.0f, 200.0f);
 
+    // Variable declarations
     std::mutex loadingMutex;
-    std::thread loadingThread([&loadingMutex]()
+    int i_loadingProgress = 0;
+    bool b_loadingComplete = false;
+
+    std::thread loadingThread([&]()     // Loading thread, simulates what loading large assets would be like using a basic timer.
         {
             {
                 std::lock_guard<std::mutex> lock(loadingMutex);
-                std::cout << "Loading game assets..." << std::endl;
+                std::cout << "Loading game assets... ;)" << std::endl;
             }
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= 100; i+=10)
             {
-                std::this_thread::sleep_for(std::chrono::seconds(1));
+                std::this_thread::sleep_for(std::chrono::milliseconds(500));    // Timer loop to showcase loading screen.
                 std::lock_guard<std::mutex> lock(loadingMutex);
-                std::cout << "Loading Game: " << (i * 20) << "% complete..." << std::endl;
+                i_loadingProgress = i;
+                std::cout << "Loading Game: " << (i) << "% complete..." << std::endl;
             }
             {
                 std::lock_guard<std::mutex> lock(loadingMutex);
-                std::cout << "Loading complete." << std::endl;
+                b_loadingComplete = true;
+                std::cout << "Loading complete! :D" << std::endl;
             }
         });
+
+    sf::RectangleShape progressBar(sf::Vector2f(0.f, 40.f));
+    progressBar.setPosition(200.f, 280.f);
+    progressBar.setFillColor(sf::Color::Green);
+    
+    sf::RectangleShape progressBarBackground(sf::Vector2f(400.f, 40.f));
+    progressBarBackground.setPosition(200.f, 280.f);
+    progressBarBackground.setFillColor(sf::Color(100, 100, 100));
+
+    //  Loading screen loop.
+    while (window.isOpen())
+    {
+        // Window set-up. Creates a white background and draws the empty progress bar (progressBarBackground) as well as the actual progressBar to show loading progress.
+        window.clear(sf::Color::White);
+        window.draw(progressBarBackground);
+        window.draw(progressBar);
+        
+        progressBar.setSize(sf::Vector2f(400.f * (i_loadingProgress / 100.0f), 40.f));  // Changes size of progress bar based on the current value written to i_loadingProgress. Updates continuously until the game is ready to start.
+
+        window.display();
+
+        if (b_loadingComplete)
+        {
+            break;  // Breaks the loop immediately upon finishing loading, launching the game.
+        }
+    }
 
     if (loadingThread.joinable())
     {
         loadingThread.join();
     }
+
 
     //Box2D works in meters. SFML works in pixels.
     const float SCALE = 30.0f;
