@@ -14,38 +14,37 @@ private:
     };
 
     std::vector<PoolEntry> pool;
+    PoolEntry entry;
 
 public:
-    PigMemoryPool(size_t maxPigs) {
-        pool.reserve(maxPigs);
-        for (size_t i = 0; i < maxPigs; i++) {
-            PoolEntry entry;
-            entry.pig = std::make_unique<Pig>("../assets/pig.png", -1000.0f, -1000.0f);
-            pool.push_back(std::move(entry));
+    const std::vector<PoolEntry>& getPool() const {
+        return pool;
+    }
+
+    PigMemoryPool(size_t maxPigs) {     // Creation of memory pool that takes a maximum amount of pigs as an inout.
+        for (size_t i = 0; i < maxPigs; i++) {      // Looped for each pig defined by the value inputted into the function.
+            pool.reserve(maxPigs);      // Immediately reserves a custom amount of "pig" objects in memory.
+            pool.push_back(std::move(entry));   // Pushes created pig into the memory pool.
         }
     }
 
     Pig* acquire(float x, float y) {
         for (auto& entry : pool) {
-            if (!entry.b_active) {
-                entry.pig = std::make_unique<Pig>("../assets/pig.png", x, y);
-                entry.b_active = true;
-                return entry.pig.get();
+            if (!entry.b_active) {  // Finds inactive part of memory pool for use.
+                entry.pig = std::make_unique<Pig>("../assets/pig.png", x, y);   // Creates of a unique pig based on inputted x and y values.
+                entry.b_active = true;  // Marks reserved memory as active, as an on-screen pig object now uses it.
+                return entry.pig.get();     // Returns the pig.
             }
         }
         return nullptr;
     }
 
-    void release(Pig* pig) {
+    void release(Pig* pig) {    // Function to release the pig object once it is no longer needed.
         for (auto& entry : pool) {
             if (entry.pig.get() == pig) {
-                entry.b_active = false;
+                entry.b_active = false;     // Marks memory as inactive to release the pig.
                 return;
             }
         }
-    }
-
-    const std::vector<PoolEntry>& getPool() const {
-        return pool;
     }
 };

@@ -31,26 +31,26 @@ int main() {
         {
             {
                 std::lock_guard<std::mutex> lock(loadingMutex);
-                std::cout << "Loading game assets... ;)" << std::endl;
+                std::cout << "Loading game assets..." << std::endl;     // Writes initial message to the console as back-up.
             }
             for (int i = 1; i <= 100; i+=10)
             {
                 std::this_thread::sleep_for(std::chrono::milliseconds(500));    // Timer loop to showcase loading screen.
                 std::lock_guard<std::mutex> lock(loadingMutex);
-                i_loadingProgress = i;
-                std::cout << "Loading Game: " << (i) << "% complete..." << std::endl;
+                i_loadingProgress = i;  // Assigns current loop progress to i_loadingProgress, which is also used to configure the size of the progress bar.
+                std::cout << "Loading Game: " << (i) << "% complete..." << std::endl;   // Continues to write console log as back-up, so user can see loading progress even if window doesn't render.
             }
             {
                 std::lock_guard<std::mutex> lock(loadingMutex);
-                b_loadingComplete = true;
+                b_loadingComplete = true;   // Once loading is <=100, sets b_loadingComplete to true, which ends the loading screen. 
                 std::cout << "Loading complete! :D" << std::endl;
             }
         });
-
+    // Creation of the progress bar object.
     sf::RectangleShape progressBar(sf::Vector2f(0.f, 40.f));
     progressBar.setPosition(200.f, 280.f);
     progressBar.setFillColor(sf::Color::Green);
-    
+    // "Background" for the loading bar acts as an empty loading bar.
     sf::RectangleShape progressBarBackground(sf::Vector2f(400.f, 40.f));
     progressBarBackground.setPosition(200.f, 280.f);
     progressBarBackground.setFillColor(sf::Color(100, 100, 100));
